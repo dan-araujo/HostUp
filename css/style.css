@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho da página */
+header {
+    position: relative;
+    padding: 15px 0px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo div {
+    position: absolute;
+    top: 0;
+    left: 95px;
+}
+
+.logo p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2f86d6;
+}
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #233032;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+/* Banner da Página */
+.banner {
+    background-color: #2f86d6;
+}
+
+.banner-conteudo,
+.informacoes-detalhes {
+    width: 1024px;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.banner-conteudo figure {
+    width: 50%;
+}
+
+.banner-informacoes {
+    width: 470px;
+    padding: 90px 0px 0px 50px;
+}
+
+.banner-informacoes p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.banner-informacoes p:first-child {
+    text-align: center;
+}
+
+.banner-informacoes h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.banner-informacoes p,
+.banner-informacoes h1 {
+    margin: 20px 0px;
+    color: #fff;
+}
+
+#banner figure {
+    width: 50%;
+}
+
+/* Primeiro e Segundo Anúncios */
+#primeiro-anuncio,
+.segundo-anuncio-conteudo a {
+    background-color: #23303e;
+}
+
+#segundo-anuncio,
+.primeiro-anuncio-conteudo a {
+    background-color: #2f86d6;
+
+}
+
+.primeiro-anuncio-conteudo,
+.segundo-anuncio-conteudo {
+    width: 1024px;
+    position: relative;
+    padding: 30px 0;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.primeiro-anuncio-informacoes,
+.segundo-anuncio-informacoes {
+    width: 600px;
+}
+
+.primeiro-anuncio-informacoes h3,
+.segundo-anuncio-informacoes h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.primeiro-anuncio-conteudo,
+.segundo-anuncio-conteudo {
+    padding-left: 50px;
+}
+
+.primeiro-anuncio-conteudo a,
+.segundo-anuncio-conteudo a {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.primeiro-anuncio-conteudo a img,
+.segundo-anuncio-conteudo a img {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 20px;
+    margin-left: 20px;
+}
+
+.primeiro-anuncio-conteudo a span,
+.segundo-anuncio-conteudo a span {
+    margin-left: 30px;
+}
+
+.primeiro-anuncio-informacoes p {
+    font-size: 16px;
+}
+
+
+/* Informações */
+#informacoes {
+    padding: 100px 0px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#informacoes header {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#informacoes header h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+}
+
+.texto-azul {
+    color: #2f86d6;
+    font-size: 32px;
+}
+
+
+.box-informacao {
+    width: 33%;
+    padding: 60px 0px 0px 30px;
+}
+
+.box-informacao img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+.box-informacao h4 {
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+.box-informacao p {
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+}
+
+/* Planos */
+#planos {
+    padding: 50px 0px 80px;
+    background-color: #f1f3f7;
+}
+
+#planos h1 {
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+}
+
+.planos-conteudo {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+table {
+    margin-top: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 40px 10px #2f86d6;
+}
+
+
+table thead th {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #fff;
+}
+
+table thead th h3 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+table thead th img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+table thead th small {
+    max-width: 150px;
+    padding: 10px 0px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #a89f9f;
+}
+
+table tbody td {
+    width: 250px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.linha-impar {
+    font-size: 16px;
+    background-color: #f1f3f7;
+}
+
+.linha-par {
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/*  Contato   */
+#contato {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*  Rodapé da página */
+footer {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #f1f3f7;
+}
+
+footer span,
+.logo div span {
+    color: #2f86d6;
+}
+
+footer a {
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    background-image: url("../img/seta-pra-cima.png");
+    background-size: cover;
+    background-color: white;
+    border-radius: 100px;
+}
+
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+
+    header {
+        padding: 20px 0px 40px;
+        max-width: 400px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .logo img {
+        width: 60px;
+        margin-left: 10px;
+    }
+
+    .logo div {
+        display: flex;
+        align-content: center;
+    }
+
+    nav {
+        margin-bottom: 20px;
+        margin-left: 60px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 0px 5px;
+        position: relative;
+        top: 30px;
+        right: 10px;
+    }
+
+    .logo p {
+        position: relative;
+        top: 25px;
+        left: 0px;
+    }
+
+    .logo div h1 {
+        font-size: 20px;
+        position: relative;
+        left: 10px;
+    }
+
+
+    .banner-conteudo,
+    .informacoes-detalhes {
+        max-width: 400px;
+    }
+
+    .banner-informacoes {
+        width: 200px;
+        padding: 30px 20px;
+    }
+
+    .banner-informacoes p,
+    .banner-informacoes h1 {
+        margin: 10px;
+    }
+
+    .banner-informacoes p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .banner-informacoes h1 {
+        font-size: 18px;
+    }
+
+    .banner-conteudo figure img {
+        width: 200px;
+        position: relative;
+        top: 100px;
+        right: 25px;
+    }
+
+    .primeiro-anuncio-conteudo,
+    .segundo-anuncio-conteudo {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primeiro-anuncio-informacoes,
+    .segundo-anuncio-informacoes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primeiro-anuncio-conteudo,
+    .segundo-anuncio-conteudo {
+        padding-left: 30px;
+    }
+
+    .primeiro-anuncio-informacoes h3,
+    .segundo-anuncio-informacoes h3 {
+        font-size: 15px;
+    }
+
+    .primeiro-anuncio-informacoes p {
+        font-size: 12px;
+    }
+
+    .primeiro-anuncio-conteudo a,
+    .segundo-anuncio-conteudo a {
+        font-size: 12px;
+        display: flex;
+        margin: 0 auto;
+        padding: 10px;
+        width: 180px;
+        margin-top: 10px;
+        top: 5px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    .primeiro-anuncio-conteudo a img,
+    .segundo-anuncio-conteudo a img {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 12px;
+    }
+
+    .primeiro-anuncio-conteudo a span,
+    .segundo-anuncio-conteudo a span {
+        margin-left: 20px;
+    }
+
+    #informacoes {
+        padding: 5px 0px;
+    }
+
+    #informacoes header {
+        width: 400px;
+        padding-bottom: 20px;
+    }
+
+    #informacoes header h1 {
+        font-size: 18px;
+    }
+
+    .texto-azul {
+        font-size: 18px;
+    }
+
+    .banner-conteudo,
+    .informacoes-detalhes {
+        width: 400px;
+    }
+
+    .box-informacao {
+        padding: 10px 0px 30px;
+    }
+
+    .box-informacao img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .box-informacao p {
+        font-size: 12px;
+    }
+
+    .box-informacao h4 {
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+
+
+    #planos {
+        padding: 30px 0px 40px;
+    }
+
+    #planos h1 {
+        font-size: 15px;
+    }
+
+    #planos h1 .texto-azul {
+        font-size: 15px;
+    }
+
+    .planos-conteudo {
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    table {
+        box-shadow: 0px 2px 5px 5px #2f86d6;
+    }
+
+    table thead {
+        margin: 0 auto;
+    }
+
+    table thead th {
+        padding: 15px 5px;
+    }
+
+    table thead th:first-of-type h3,
+    table thead th:first-of-type img,
+    table thead th:first-of-type small {
+        position: relative;
+        bottom: 12px;
+    }
+
+    table thead th h3 {
+        font-size: 12px;
+    }
+
+    table thead th img {
+        width: 60px;
+        height: 80px;
+    }
+
+    table thead th small {
+        font-size: 10px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .linha-impar,
+    .linha-par {
+        font-size: 12px;
+    }
+
+    table tbody td {
+        width: 50px;
+        padding: 18px;
+    }
+
+    #contato {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer a {
+        width: 25px;
+        height: 25px;
+        right: 5px;
+    }
+}

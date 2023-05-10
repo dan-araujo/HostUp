@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho da página */
+header {
+    background-color: #2f86d6;
+}
+
+.conteudo-cabecalho {
+    position: relative;
+    padding: 15px 0px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo div {
+    position: absolute;
+    top: 0;
+    left: 95px;
+}
+
+.logo div span {
+    color: #fff;
+}
+
+.logo p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav {
+    position: absolute;
+    top: 45px;
+    right: 0;
+}
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+/* Conteúdo com os preços */
+main {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+main table {
+    margin: auto;
+}
+
+.celula-invisivel {
+    visibility: hidden;
+}
+
+.celula-cabecalho {
+    text-align: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f1f3f7;
+    border-right: 1px solid #f1f3f7;
+    background-color: #f1f3f7;
+}
+
+.celula-cabecalho p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a8a4a4;
+}
+
+.celula-cabecalho h2 {
+    font-size: 36px;
+}
+
+table tbody td {
+    text-align: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f1f3f7;
+    border-right: 1px solid #f1f3f7;
+}
+
+.celula-principal {
+    background-color: #f1f3f7;
+    font-weight: bold;
+}
+
+.marcador-azul {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    background-color: #2f86d6;
+    border-radius: 100px;
+}
+
+/*  Rodapé da Página */
+footer {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #2f86d6;
+    color: #f1f3f7;
+}
+
+footer a {
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    background-image: url("../img/seta-pra-cima2.png");
+    background-size: cover;
+    background-color: white;
+    border-radius: 100px;
+}
+
+footer span {
+    color: #23303e;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    header {
+        padding-bottom: 20px;
+        max-width: 412px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .logo img {
+        width: 60px;
+        margin-left: 10px;
+    }
+
+    .logo div {
+        display: flex;
+        align-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 0px 5px;
+        position: relative;
+        top: 30px;
+        right: 10px;
+    }
+
+    .logo p {
+        position: relative;
+        top: 25px;
+        left: 0px;
+    }
+
+    nav {
+        margin-bottom: 20px;
+        margin-left: 60px;
+    }
+
+    .logo div h1 {
+        font-size: 20px;
+        position: relative;
+        left: 10px;
+    }
+
+    main {
+        max-width: 480px;
+        padding: 30px 0px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    table tbody td,
+    .celula-cabecalho,
+    .celula-principal {
+        padding: 0px;
+    }
+
+    .celula-cabecalho h2 {
+        font-size: 15px;
+    }
+
+    .celula-cabecalho p {
+        font-size: 13px;
+    }
+
+    .celula-principal {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        white-space: normal;
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 12px;
+        position: relative;
+        bottom: 0;
+    }
+
+    footer a {
+        width: 25px;
+        height: 25px;
+        right: 5px;
+    }
+}
