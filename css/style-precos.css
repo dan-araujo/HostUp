@@ -240,3 +240,15 @@ footer span {
         right: 5px;
     }
 }
+
+@media (max-width: 375px) {
+    nav {
+        margin: 10px 0px 20px;
+        text-align: center;
+    }
+
+    #cabecalho {
+        padding: 20px 0px 25px;
+        max-width: 100%;
+    }
+}
