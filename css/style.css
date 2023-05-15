@@ -579,3 +579,81 @@ footer a {
         right: 5px;
     }
 }
+
+@media (max-width: 375px) {
+    nav {
+        margin: 10px 0px 20px;
+        text-align: center;
+    }
+
+    .banner-informacoes {
+        width: 100%;
+    }
+
+    #cabecalho {
+        padding: 20px 0px 50px;
+        max-width: 100%;
+    }
+
+    .banner-conteudo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-conteudo figure img,
+    .planos-conteudo {
+        width: 100%;
+    }
+
+    .banner-conteudo figure {
+        object-fit: contain;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .informacoes-detalhes {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 10px;
+    }
+
+    table {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    table thead th h3 {
+        margin-bottom: 20px;
+    }
+
+    th,
+    td {
+        padding: 8px 5px;
+    }
+
+    th h3 {
+        font-size: 12px;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    th img {
+        max-width: 40px;
+        object-fit: contain;
+    }
+
+    th small {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .linha-impar,
+    .linha-par {
+        font-size: 12px;
+    }
+}
