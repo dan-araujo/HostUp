@@ -9,7 +9,6 @@
 
 /* Cabeçalho da página */
 header {
-    position: relative;
     padding: 15px 0px;
     width: 100%;
     max-width: 1024px;
@@ -17,7 +16,9 @@ header {
 }
 
 .logo {
-    position: relative;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
 }
 
 .logo img {
@@ -25,9 +26,12 @@ header {
 }
 
 .logo div {
-    position: absolute;
-    top: 0;
-    left: 95px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo div span {
+    margin-left: 10px;
 }
 
 .logo p {
@@ -37,9 +41,7 @@ header {
 }
 
 nav {
-    position: absolute;
-    top: 30px;
-    right: 0;
+  margin-top: 30px;
 }
 
 nav a {
@@ -306,7 +308,7 @@ footer {
 }
 
 footer span,
-.logo div span {
+.cor-azul {
     color: #2f86d6;
 }
 
@@ -325,54 +327,38 @@ footer a {
 
 
 /* Para telas menores que 480px */
-@media (max-width: 480px) {
+@media (max-width: 550px) {
 
     header {
-        padding: 20px 0px 40px;
-        max-width: 400px;
+        width: 100%;
     }
 
     .logo {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-content: center;
+        justify-content: center;
     }
 
     .logo img {
         width: 60px;
-        margin-left: 10px;
     }
 
     .logo div {
-        display: flex;
-        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
     }
 
     nav {
-        margin-bottom: 20px;
-        margin-left: 60px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     nav a {
         font-size: 14px;
         padding: 0px 5px;
-        position: relative;
-        top: 30px;
-        right: 10px;
     }
-
-    .logo p {
-        position: relative;
-        top: 25px;
-        left: 0px;
-    }
-
-    .logo div h1 {
-        font-size: 20px;
-        position: relative;
-        left: 10px;
-    }
-
 
     .banner-conteudo,
     .informacoes-detalhes {
@@ -587,7 +573,7 @@ footer a {
     }
 
     #cabecalho {
-        padding: 20px 0px 50px;
+        padding: 10px;
         max-width: 100%;
     }
 
