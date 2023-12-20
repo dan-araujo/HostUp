@@ -1,28 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-
 /* Cabeçalho da página */
 header {
     padding: 15px 0px;
     width: 100%;
-    max-width: 1024px;
     margin: 0 auto;
+    max-width: 1024px;
 }
 
 .logo {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .logo img {
     width: 80px;
+    height: 80px;
+    margin-right: 10px;
 }
 
 .logo div {
@@ -31,18 +27,19 @@ header {
     margin-left: 10px;
 }
 
-.logo div span {
-    margin-left: 10px;
+.logo div h1,
+.logo div p {
+    margin: 0;
 }
 
 .logo p {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     color: #2f86d6;
 }
 
 nav {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 nav a {
@@ -73,6 +70,8 @@ nav a {
 
 .banner-informacoes {
     padding: 90px 0px 0px 50px;
+    max-width: 1024px;
+    width: 100%;
 }
 
 .banner-informacoes p {
@@ -85,8 +84,12 @@ nav a {
 }
 
 .banner-informacoes h1 {
-    font-size: 28px;
+    font-size: 40px;
     text-align: center;
+}
+
+.banner-informacoes p {
+    font-size: 20px;
 }
 
 .banner-informacoes p,
@@ -96,10 +99,6 @@ nav a {
 }
 
 /* Primeiro e Segundo Anúncios */
-.primeiro-anuncio-conteudo, .segundo-anuncio-conteudo {
-   display: flex;
-   flex-direction: row;
-}
 
 #primeiro-anuncio,
 .segundo-anuncio-conteudo a {
@@ -114,6 +113,9 @@ nav a {
 
 .primeiro-anuncio-conteudo,
 .segundo-anuncio-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     max-width: 1024px;
     padding: 30px 0;
     margin: 0 auto;
@@ -127,7 +129,7 @@ nav a {
 
 .primeiro-anuncio-informacoes h3,
 .segundo-anuncio-informacoes h3 {
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .primeiro-anuncio-conteudo a,
@@ -137,11 +139,13 @@ nav a {
     font-size: 18px;
     font-weight: 700;
     padding: 20px;
+    height: 20px;
     border-radius: 4px;
     text-decoration: none;
     text-align: center;
     color: #fff;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .primeiro-anuncio-conteudo a img,
@@ -150,15 +154,16 @@ nav a {
     height: 20px;
     margin-left: 20px;
     margin-top: 5px;
+    margin-right: 10px;
 }
 
-.primeiro-anuncio-conteudo a span,
-.segundo-anuncio-conteudo a span {
-    margin-left: 30px;
+.primeiro-anuncio-conteudo a span {
+    margin: 1px;
+    padding: 1px;
 }
 
 .primeiro-anuncio-informacoes p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 
@@ -176,13 +181,13 @@ nav a {
 
 #informacoes header h1 {
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
     color: #000;
 }
 
 .texto-azul {
     color: #2f86d6;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 
@@ -199,7 +204,7 @@ nav a {
 }
 
 .box-informacao h4 {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     color: #000;
     padding: 20px 0px;
@@ -318,24 +323,50 @@ footer a {
     border-radius: 100px;
 }
 
-
-@media(min-width: 551px) and (max-width: 768px) {
-
-    header {
-        width: 100%;
-        max-width: 710px;
-    }
-
-    .logo {
-        width: 100%;
-        justify-content: space-between;
+@media(min-width: 769px) and (max-width: 1023px) {
+    table {
+        width: 800px;
+        overflow: scroll;
     }
 
     .banner-conteudo {
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       max-width: 710px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-informacoes {
+        padding: 20px;
+        max-width: 800px;
+    }
+
+    .primeiro-anuncio-conteudo,
+    .segundo-anuncio-conteudo {
+        max-width: 800px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 768px) {
+
+    header {
+        max-width: 768px;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 0 5px;
+    }
+
+    .banner-conteudo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 768px;
     }
 
     .banner-conteudo img {
@@ -346,32 +377,38 @@ footer a {
         padding: 20px;
     }
 
-    .banner-informacoes h1, .banner-informacoes p {
+    .banner-informacoes h1,
+    .banner-informacoes p {
         text-align: center;
         margin: 20px;
     }
 
-    .primeiro-anuncio-conteudo, .segundo-anuncio-conteudo {
+    .primeiro-anuncio-conteudo,
+    .segundo-anuncio-conteudo {
         flex-direction: column;
         align-items: center;
-        max-width: 768px;
     }
 
-    .primeiro-anuncio-conteudo div, .segundo-anuncio-conteudo div {
+    .primeiro-anuncio-conteudo div,
+    .segundo-anuncio-conteudo div {
         margin-bottom: 10px;
     }
 
-    .primeiro-anuncio-conteudo a, .segundo-anuncio-conteudo a {
+    .primeiro-anuncio-conteudo a,
+    .segundo-anuncio-conteudo a {
         justify-content: center;
         width: 40%;
         padding: 20px;
     }
 
-    .primeiro-anuncio-conteudo a img, .segundo-anuncio-conteudo a img {
+    .primeiro-anuncio-conteudo a img,
+    .segundo-anuncio-conteudo a img {
         margin-left: 0;
     }
 
-    .planos-conteudo, footer, .primeiro-anuncio-conteudo, 
+    .planos-conteudo,
+    footer,
+    .primeiro-anuncio-conteudo,
     .segundo-anuncio-conteudo {
         max-width: 768px;
     }
@@ -396,10 +433,11 @@ footer a {
     }
 
 }
+
 /* Para telas menores que 480px */
 @media (max-width: 550px) {
 
-     header {
+    header {
         width: 100%;
     }
 
@@ -497,23 +535,19 @@ footer a {
         padding: 10px;
         width: 180px;
         margin-top: 10px;
-        top: 5px;
         display: flex;
-        position: relative;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .primeiro-anuncio-conteudo a img,
     .segundo-anuncio-conteudo a img {
         width: 14px;
         height: 14px;
-        position: absolute;
-        top: 12px;
     }
 
-    .primeiro-anuncio-conteudo a span,
-    .segundo-anuncio-conteudo a span {
-        margin-left: 20px;
+    .informacoes-detalhes {
+        flex-direction: column;
+        align-items: center;
     }
 
     #informacoes {
@@ -521,7 +555,7 @@ footer a {
     }
 
     #informacoes header {
-        width: 400px;
+        width: 100%;
         padding-bottom: 20px;
     }
 
@@ -548,12 +582,7 @@ footer a {
     }
 
     .box-informacao p {
-        font-size: 12px;
-    }
-
-    .box-informacao h4 {
         font-size: 15px;
-        padding: 10px 0px;
     }
 
 
@@ -578,6 +607,7 @@ footer a {
 
     table {
         box-shadow: 0px 2px 5px 5px #2f86d6;
+        overflow: scroll;
     }
 
     table thead {
@@ -687,6 +717,7 @@ footer a {
     table {
         width: 99%;
         table-layout: fixed;
+        overflow: scroll;
     }
 
     table thead {
@@ -695,6 +726,7 @@ footer a {
 
     table thead th h3 {
         margin-bottom: 0px;
+        font-size: 8px;
     }
 
     th,

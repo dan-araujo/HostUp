@@ -10,18 +10,14 @@
 /* Cabeçalho da página */
 header {
     background-color: #2f86d6;
-}
-
-.conteudo-cabecalho {
-    position: relative;
-    padding: 15px 0px;
     width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
 }
 
 .logo {
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 15px;
 }
 
 .logo img {
@@ -29,13 +25,14 @@ header {
 }
 
 .logo div {
-    position: absolute;
-    top: 0;
-    left: 95px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
 }
 
 .logo div span {
     color: #fff;
+    margin-left: 10px;
 }
 
 .logo p {
@@ -45,9 +42,7 @@ header {
 }
 
 nav {
-    position: absolute;
-    top: 45px;
-    right: 0;
+    margin: 40px 15px;
 }
 
 nav a {
