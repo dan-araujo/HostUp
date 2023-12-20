@@ -96,6 +96,11 @@ nav a {
 }
 
 /* Primeiro e Segundo Anúncios */
+.primeiro-anuncio-conteudo, .segundo-anuncio-conteudo {
+   display: flex;
+   flex-direction: row;
+}
+
 #primeiro-anuncio,
 .segundo-anuncio-conteudo a {
     background-color: #23303e;
@@ -109,8 +114,7 @@ nav a {
 
 .primeiro-anuncio-conteudo,
 .segundo-anuncio-conteudo {
-    width: 1024px;
-    position: relative;
+    max-width: 1024px;
     padding: 30px 0;
     margin: 0 auto;
     color: #fff;
@@ -124,19 +128,12 @@ nav a {
 .primeiro-anuncio-informacoes h3,
 .segundo-anuncio-informacoes h3 {
     font-size: 24px;
-    margin-bottom: 5px;
-}
-
-.primeiro-anuncio-conteudo,
-.segundo-anuncio-conteudo {
-    padding-left: 50px;
 }
 
 .primeiro-anuncio-conteudo a,
 .segundo-anuncio-conteudo a {
-    position: absolute;
-    top: 30px;
-    right: 0;
+    display: flex;
+    flex-direction: row;
     font-size: 18px;
     font-weight: 700;
     padding: 20px;
@@ -149,11 +146,10 @@ nav a {
 
 .primeiro-anuncio-conteudo a img,
 .segundo-anuncio-conteudo a img {
-    position: absolute;
-    top: 25px;
-    left: 0;
     width: 20px;
+    height: 20px;
     margin-left: 20px;
+    margin-top: 5px;
 }
 
 .primeiro-anuncio-conteudo a span,
@@ -325,6 +321,11 @@ footer a {
 
 @media(min-width: 551px) and (max-width: 768px) {
 
+    .logo, header {
+        width: 100%;
+        max-width: 760px;
+    }
+
     .banner-conteudo {
        flex-direction: column;
        align-items: center;
@@ -345,8 +346,32 @@ footer a {
         margin: 20px;
     }
 
+    .primeiro-anuncio-conteudo, .segundo-anuncio-conteudo {
+        flex-direction: column;
+        align-items: center;
+        max-width: 768px;
+    }
+
+    .primeiro-anuncio-conteudo div, .segundo-anuncio-conteudo div {
+        margin-bottom: 10px;
+    }
+
+    .primeiro-anuncio-conteudo a, .segundo-anuncio-conteudo a {
+        justify-content: center;
+        width: 40%;
+        padding: 20px;
+    }
+
+    .primeiro-anuncio-conteudo a img, .segundo-anuncio-conteudo a img {
+        margin-left: 0;
+    }
+
+    .planos-conteudo {
+        max-width: 768px;
+    }
+
     table {
-        margin: 0 15px;
+        margin: 15px;
         max-width: 100%;
         overflow: scroll;
     }
@@ -354,7 +379,7 @@ footer a {
 /* Para telas menores que 480px */
 @media (max-width: 550px) {
 
-    header {
+     header {
         width: 100%;
     }
 
