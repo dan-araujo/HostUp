@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
 /* Cabeçalho da página */
 header {
@@ -99,7 +105,6 @@ nav a {
 }
 
 /* Primeiro e Segundo Anúncios */
-
 #primeiro-anuncio,
 .segundo-anuncio-conteudo a {
     background-color: #23303e;
@@ -139,7 +144,6 @@ nav a {
     font-size: 18px;
     font-weight: 700;
     padding: 20px;
-    height: 20px;
     border-radius: 4px;
     text-decoration: none;
     text-align: center;
@@ -354,11 +358,12 @@ footer a {
     }
 
     .logo {
-        margin: 0;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav a {
-        font-size: 18px;
+        font-size: 20px;
         padding: 0 5px;
     }
 
@@ -366,7 +371,6 @@ footer a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: 768px;
     }
 
     .banner-conteudo img {
@@ -406,7 +410,10 @@ footer a {
         margin-left: 0;
     }
 
-    .planos-conteudo,
+    .planos-conteudo {
+        width: 100%;
+    }
+
     footer,
     .primeiro-anuncio-conteudo,
     .segundo-anuncio-conteudo {
@@ -416,6 +423,11 @@ footer a {
     .informacoes-detalhes {
         flex-direction: column;
         align-items: center;
+    }
+
+    #informacoes header {
+        width: 96%;
+        
     }
 
     footer a {
@@ -428,7 +440,7 @@ footer a {
 
     table {
         margin: 0 5px;
-        max-width: 94%;
+        max-width: 98%;
         overflow: scroll;
     }
 
